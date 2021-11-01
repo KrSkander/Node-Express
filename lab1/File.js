@@ -27,7 +27,7 @@ app.get('/students', (req, res) => {
 })
 
 app.post('/students',(req,res) => {
-    console.log(req.body);
+    console.log(req.body);          //use body parser  const i = require ("bodyparser") ; app.use(i())
     let newStudent = req.body;
     students.push(newStudent);
     res.sendStatus(201);
